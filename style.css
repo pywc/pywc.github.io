@@ -32,16 +32,20 @@ a {
 }
 
 .title:hover {
-    color: white;
+    color: #ffc107;
     text-decoration: none;
 }
 
-.my-name {
+#my-name {
     color: #ffc107;
 }
 
-.subtext {
-    color: #a6a6a6;
+.action-btn {
+    font-size: 30px;
+}
+
+.action-btn:hover {
+    color: #ffc107
 }
 
 .light-mode {
@@ -53,12 +57,8 @@ a {
     color: black;
 }
 
-.light-mode a:hover {
-    color: black;
-}
-
-.light-mode span {
-    color: black;
+.subtext {
+    color: #a6a6a6;
 }
 
 .toggle {
