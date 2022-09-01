@@ -1,0 +1,38 @@
+body {
+    background-color: black;
+    color: white;
+    letter-spacing: -0.5px;
+}
+
+h1 {
+    color: white;
+
+}
+
+.semibold {
+    font-weight: 600;
+}
+
+.extrabold {
+    font-weight: 800;
+}
+
+.container {
+    max-width: 1000px;
+}
+
+.title {
+    font-size: 30px;
+    font-weight: 800;
+    color: white;
+    text-decoration: none;
+}
+
+.title:hover {
+    color: white;
+    text-decoration: none;
+}
+
+.subtext {
+    color: #a6a6a6;
+}
