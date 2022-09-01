@@ -22,14 +22,16 @@
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     <li>
+                        <button onclick="toggleLight()" class="toggle" style="font-size: 30px; padding-right: 10px;"><i
+                                id="light-toggle" class="bi bi-sun social-icon"></i></button>
                         <a target="_none" href="https://www.linkedin.com/in/pywchung/"
-                            style="font-size: 30px; padding-right: 10px;"><i class="bi bi-linkedin"
-                                style="color: white"></i></a>
-                        <a target="_none" href="https://github.com/pywc" style="font-size: 30px"><i class="bi bi-github"
-                                style="color: white"></i></a>
+                            style="font-size: 30px; padding-right: 10px;"><i class="bi bi-linkedin social-icon"></i></a>
+                        <a target="_none" href="https://github.com/pywc" style="font-size: 30px"><i
+                                class="bi bi-github social-icon"></i></a>
                     </li>
                 </ul>
             </header>
+            <!--Content-->
             <main>
                 <div class="row">
                     <div class="col-md-3">
@@ -49,11 +51,13 @@
                         style="width: 1000px; height: 700px" frameborder="0"></iframe>
                 </div>
             </main>
+            <!--Footer-->
             <footer class="pt-5 my-5 border-top">
                 &copy; Copyright 2022 &middot; Paul Chung
             </footer>
         </div>
     </div>
+    <script src="lightMode.js"></script>
 </body>
 
 </html>
