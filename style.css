@@ -1,5 +1,20 @@
+:root {
+    --pywc-primary: #2e4057;
+    --pywc-secondary: #F2DDA4;
+}
+
+.btn-primary,
+.btn-primary:active,
+.btn-primary:visited {
+    background-color: var(--pywc-secondary) !important;
+    color: var(--pywc-primary) !important;
+    border: 0px !important;
+    outline: none;
+}
+
+
 body {
-    background-color: black;
+    background-color: var(--pywc-primary);
     color: white;
     letter-spacing: -0.5px;
 }
@@ -11,6 +26,10 @@ h1 {
 a {
     color: white;
     text-decoration: none;
+}
+
+a:hover {
+    filter: brightness(85%);
 }
 
 .semibold {
@@ -56,12 +75,12 @@ a {
 }
 
 .title:hover {
-    color: #ffc107;
+    color: var(--pywc-secondary);
     text-decoration: none;
 }
 
-#my-name {
-    color: #ffc107;
+.my-name {
+    color: var(--pywc-secondary);
 }
 
 .action-btn {
@@ -69,32 +88,9 @@ a {
 }
 
 .action-btn:hover {
-    color: #ffc107
-}
-
-.light-mode {
-    background-color: white;
-    color: black;
-}
-
-.light-mode a {
-    color: black;
+    color: var(--pywc-secondary);
 }
 
 .subtext {
     color: #a6a6a6;
-}
-
-.toggle {
-    padding: 0;
-    border: none;
-    background: none;
-}
-
-.bi-sun {
-    color: white;
-}
-
-.bi-moon {
-    color: black;
 }
