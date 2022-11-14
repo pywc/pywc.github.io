@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Verdana, sans-serif;
+            background-color: black;
+            color: white;
+        }
+
+        .mySlides {
+            display: none;
+        }
+
+        img {
+            vertical-align: middle;
+        }
+
+        /* Slideshow container */
+        .slideshow-container {
+            position: relative;
+            width: 800px;
+        }
+
+        /* Caption text */
+        .text {
+            color: #f2f2f2;
+            font-size: 15px;
+            padding: 8px 12px;
+            position: absolute;
+            bottom: 8px;
+            width: 100%;
+            text-align: center;
+            background-color: black;
+        }
+
+        .active {
+            background-color: #717171;
+        }
+
+        /* Fading animation */
+        .fade {
+            animation-name: fade;
+            animation-duration: 1.5s;
+        }
+
+        @keyframes fade {
+            from {
+                opacity: .4
+            }
+
+            to {
+                opacity: 1
+            }
+        }
+
+        /* On smaller screens, decrease text size */
+        @media only screen and (max-width: 300px) {
+            .text {
+                font-size: 11px
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <button onclick="start()">Start</button>
+    <button onclick="stop()">Pause</button>
+
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+            <img src="images/1.webp" style="width:100%">
+            <div class="text">Everyone used to live in a happy community.</div>
+        </div>
+
+        <div class="mySlides fade">
+            <img src="images/2.webp" style="width:100%">
+            <div class="text">There used to be chatters going on, and the world would be so lively.</div>
+        </div>
+
+        <div class="mySlides fade">
+            <img src="images/4.webp" style="width:100%">
+            <div class="text">At some point, people started to dig into their phones for short-term happiness.</div>
+        </div>
+
+        <div class="mySlides fade">
+            <img src="images/5.webp" style="width:100%">
+            <div class="text">As more people were stuck to their phones, more people became indifferent to each other.
+            </div>
+        </div>
+
+        <div class="mySlides fade">
+            <img src="images/6.webp" style="width:100%">
+            <div class="text">One day, the happiness machine, in which you could forget everything and stay happy for
+                your entire life, was invented.</div>
+        </div>
+
+        <div class="mySlides fade">
+            <img src="images/7.webp" style="width:100%">
+            <div class="text">As a pursuit for even more happiness, people started to leave the community.</div>
+        </div>
+
+        <div class="mySlides fade">
+            <img src="images/8.webp" style="width:100%">
+            <div class="text">The people that left ended up moving into the happiness machines.</div>
+        </div>
+
+        <div class="mySlides fade">
+            <img src="images/9.webp" style="width:100%">
+            <div class="text">They would stay happy for their entire life, with the machine offering various forms of
+                entertainment.
+            </div>
+        </div>
+
+        <div class="mySlides fade">
+            <img src="images/11.webp" style="width:100%">
+            <div class="text">However, people outside would be sad with more of their loved onces leaving.</div>
+        </div>
+
+        <div class="mySlides fade">
+            <img src="images/12.webp" style="width:100%">
+            <div class="text">Eventually, the community will be deserted.</div>
+        </div>
+
+        <div class="mySlides fade">
+            <img src="images/13.webp" style="width:100%">
+            <div class="text">In the end, there would be someone, who is lonely as no one is besides them.</div>
+        </div>
+
+        <div class="mySlides fade">
+            <img src="images/14.webp" style="width:100%">
+            <div class="text">They will miss their loved ones in the machines, but not the otherwise <br />
+                since their loved ones wouldn't be able to remember anything about them.</div>
+        </div>
+
+        <div class="mySlides fade">
+            <img src="images/12.webp" style="width:100%">
+        </div>
+
+    </div>
+    <br>
+    <audio id="audio" loop>
+        <source src="music.mp3" type="audio/mpeg">
+    </audio>
+
+
+    <script>
+        let slideIndex = 0;
+        var timeout = null;
+
+        function start() {
+            showSlides();
+            var audio = document.getElementById("audio");
+            audio.volume = 0.1;
+            audio.play();
+        }
+
+        function stop() {
+            clearTimeout(timeout);
+            var audio = document.getElementById("audio");
+            audio.pause();
+        }
+
+        function showSlides() {
+            let slides = document.getElementsByClassName("mySlides");
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+
+            slideIndex++;
+            if (slideIndex > slides.length) {
+                slideIndex = 1
+            }
+
+            slides[slideIndex - 1].style.display = "block";
+            timeout = setTimeout(showSlides, 1000);
+        }
+    </script>
+
+</body>
+
+</html>
