@@ -66,12 +66,16 @@
                 font-size: 11px
             }
         }
+
+        #stopbtn {
+            display: none;
+        }
     </style>
 </head>
 
 <body>
-    <button onclick="start()">Start</button>
-    <button onclick="stop()">Pause</button>
+    <button onclick="start()" id="startbtn">Start</button>
+    <button onclick="stop()" id="stopbtn">Pause</button>
 
     <div class="slideshow-container">
         <div class="mySlides fade">
@@ -140,7 +144,11 @@
         </div>
 
         <div class="mySlides fade">
-            <img src="images/12.webp" style="width:100%">
+            <img src="images/15.png" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="images/16.png" style="width:100%">
         </div>
 
     </div>
@@ -159,12 +167,20 @@
             var audio = document.getElementById("audio");
             audio.volume = 0.1;
             audio.play();
+            var startbtn = document.getElementById("startbtn");
+            startbtn.style.setProperty("display", "none");
+            var stopbtn = document.getElementById("stopbtn");
+            stopbtn.style = "";
         }
 
         function stop() {
             clearTimeout(timeout);
             var audio = document.getElementById("audio");
             audio.pause();
+            var stopbtn = document.getElementById("stopbtn");
+            stopbtn.style.setProperty("display", "none");
+            var startbtn = document.getElementById("startbtn");
+            startbtn.style = "";
         }
 
         function showSlides() {
@@ -175,11 +191,11 @@
 
             slideIndex++;
             if (slideIndex > slides.length) {
-                slideIndex = 1
+                slideIndex = 1;
             }
 
             slides[slideIndex - 1].style.display = "block";
-            timeout = setTimeout(showSlides, 1000);
+            timeout = setTimeout(showSlides, 5000);
         }
     </script>
 
