@@ -98,3 +98,7 @@ a:hover {
 .subtext {
     color: #a6a6a6;
 }
+
+.fs-5 {
+    font-size: 1.15rem !important;
+}
