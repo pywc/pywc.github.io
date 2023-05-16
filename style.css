@@ -127,3 +127,7 @@ a:hover {
 .nav-tabs .nav-link {
     border: none !important;
 }
+
+.accordion-button:not(.collapsed) {
+    background: none;
+}
