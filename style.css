@@ -113,12 +113,18 @@ a:hover {
     border: none !important;
 }
 
-.nav-tabs .nav-link.active,
 .accordion-button {
-    color: var(--pywc-primary) !important;
-    background-color: var(--pywc-secondary) !important;
+    background-color: linen !important;
+    color: black !important;
 }
+
 
 .accordion-button:not(.collapsed) {
     background: none;
+}
+
+html {
+    margin-right: 0 !important;
+    padding-left: 10px;
+    padding-right: 10px;
 }
