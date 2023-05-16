@@ -78,14 +78,31 @@ a:hover {
 
 }
 
-.title:hover {
-    color: var(--pywc-secondary);
-    text-decoration: none;
-}
+
 
 .my-name {
     color: var(--pywc-secondary);
 }
+
+.nav-link {
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+}
+
+.nav-link:focus {
+    color: var(--pywc-secondary);
+}
+
+.nav-link:hover {
+    color: var(--pywc-secondary);
+    filter: brightness(85%);
+}
+
+.active {
+    color: var(--pywc-secondary);
+}
+
 
 .action-btn {
     font-size: 30px;

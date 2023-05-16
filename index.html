@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Paul Chung</title>
+    <link href="//db.onlinewebfonts.com/c/72c75860d89e91a517dfb1e7d308c180?family=Courier+New" rel="stylesheet" type="text/css"/> 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css"
@@ -13,26 +14,28 @@
 </head>
 
 <body>
-    <div class="container mx-auto p-3 py-md-5">
+    <div class="container mx-auto p-1 py-md-5">
         <div class="mt-4">
-            <!--Header-->
+            <!-Header->
             <header class="navbar d-flex align-items-center pb-3 mb-5 border-bottom">
                 <ul class="nav navbar-nav">
-                    <a class="title">
+                    <div class="title">
                         <span style="padding-right: 1px;">정이원</span>
                         <i class="bi bi-chat-left-quote"></i>
-                    </a>
+                    </div>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     <li>
                         <a target="_blank" href="https://www.linkedin.com/in/pywchung/" style="padding-right: 10px;"
                             class="action-btn"><i class="bi bi-linkedin"></i></a>
+                        <a target="_blank" href="https://twitter.com/pywchung" style="padding-right: 10px;" class="action-btn"><i
+                            class="bi bi-twitter"></i></a>
                         <a target="_blank" href="https://github.com/pywc" class="action-btn"><i
                                 class="bi bi-github"></i></a>
                     </li>
                 </ul>
             </header>
-            <!--Content-->
+            <!-Content->
             <main>
                 <div class="row">
                     <div class="col-lg-4">
@@ -50,6 +53,8 @@
                                 target="_blank">Kassem Fawaz</a> to deliver safe and secure systems.
                         </p>
                         <p class="fs-5">
+                            <strong>I am actively seeking for CS Ph.D. positions starting from Fall 2024.</strong>
+                            <br />
                             Feel free to reach out to <a class="text-warning"
                                 href="javascript:location='mailto:\u006d\u0065\u0040\u0070\u0079\u0077\u0063\u002e\u0064\u0065\u0076';void 0">
                                 me (at) pywc.dev</a>.
@@ -63,54 +68,59 @@
                     </div>
                 </div>
 
-                <hr class="col-3 col-md-2 mb-5">
-
-                <div class="row g-5">
+                <hr class="col-3 col-md-2">
+                <nav class="nav mb-5">
+                    <a class="nav-link active" href="#">About</a>
+                    <a class="nav-link" href="#">Publications</a>
+                </nav>
+                
+                <div id="main-container" class="row g-5">
+                    
                     <div class="col-md-5">
                         <h2 class="extrabold">Education</h2>
                         <span class="semibold" style="font-size: 20px">University of Wisconsin - Madison</span>
                         <ul>
-                            <li>B.S. Honors in Computer Science, 2020 - 2024</li>
+                            <li class="pt-1 pb-1">B.S. Honors in Computer Science - <span class="subtext">2020 - Present</span></li>
                         </ul>
                         <span class="semibold" style="font-size: 20px">Neung-In High School</span>
                         <ul>
-                            <li>High School Degree in STEM, 2017 - 2020</li>
+                            <li class="pt-1 pb-1">STEM High School Degree - <span class="subtext">2017 - 2020</span></li>
                         </ul>
                         <br />
-                        <h2 class="extrabold">Interests</h2>
-                        <p>Below are my current research interests.</p>
+                        <h2 class="extrabold">Positions</h2>
+                        <span class="semibold" style="font-size: 20px">Research Assistant</span>
                         <ul>
-                            <li>Systems Security</li>
-                            <li>Anti-censorship</li>
-                            <li>Privacy</li>
-                            <li>Networks</li>
-                            <li>Operating Systems</li>
-                            <li>Blockchain</li>
-                            <li>Cryptography</li>
+                            <li class="pt-1 pb-1">UW-Madison MadS&amp;P - <span class="subtext">Fall 2021 - Current</span></li>
+                            <li class="pb-1">UW-Madison WI-PI - <span class="subtext">Spring 2022 - Current</span></li>
+                            <li>Carnegie Mellon CyLab - <span class="subtext">Summer 2023</span></li>
+                        </ul>
+                        <span class="semibold" style="font-size: 18px">President &amp; CTF Team Lead</span>
+                        <ul>
+                            <li class="pt-1 pb-1">Cybersecurity UW Club - <span class="subtext">Fall 2020 - Current</span></li>
+                        </ul>
+                        <span class="semibold" style="font-size: 18px">Student Team Lead</span>
+                        <ul>
+                            <li class="pt-1 pb-1">UW-Madison CSOC - <span class="subtext">Fall 2021 - Current</span></li>
                         </ul>
                     </div>
                     <div class="col-md-7">
-                        <h2 class="extrabold">Research</h2>
-                        <p>Below is a summary list of the research projects I have participated so far.
-                            <br />The people listed are the ones I have directly communicated with.
-                            <br />Please find my CV for the specific details.
-                        </p>
+                        <h2 class="extrabold">Recent Projects</h2>
                         <p class="semibold" style="font-size: 20px">2023</p>
                         <ul>
                             <li>Shawshank Intel: A Heuristic-based Analysis of Censorship Mechanisms</li>
                             <span class="subtext">Rahul Chatterjee</span>
-                            <li>Automatic Enforcement of Google Data Safety Cards</li>
+                            <li class="pt-1">Automatic Selection and Analysis of Google Data Safety Cards</li>
                             <span class="subtext">Rishabh Khandewal, Asmit Nayak, Kassem Fawaz</span>
                         </ul>
                         <p class="semibold" style="font-size: 20px">2022</p>
                         <ul>
                             <li>Engineering Privacy in iOS App Groups</li>
                             <span class="subtext">Maryam Aldairi, Arjun Brar, Hanan Hibshi</span>
-                            <li>picoCTF: Introducing Adversarial Machine Learning to CTFs</li>
+                            <li class="pt-1">picoCTF: Introducing Adversarial Machine Learning to CTFs</li>
                             <span class="subtext">Hanan Hibshi, Maverick Woo</span>
-                            <li>CookieEnforcer: Automated Cookie Notice Analysis and Enforcement</li>
+                            <li class="pt-1">CookieEnforcer: Automated Cookie Notice Analysis and Enforcement</li>
                             <span class="subtext">Rishabh Khandewal, Asmit Nayak, Kassem Fawaz</span>
-                            <li>Araña: Characterizing Password Guessing Attacks in Practice</li>
+                            <li class="pt-1">Araña: Characterizing Password Guessing Attacks in Practice</li>
                             <span class="subtext">Rahul Chatterjee, Mazharul Islam, Marina Bohuk, Thomas
                                 Ristenpart</span>
                         </ul>
@@ -122,9 +132,9 @@
                     </div>
                 </div>
             </main>
-            <!--Footer-->
+            <!-Footer->
             <footer class="pt-5 my-5 border-top">
-                &copy; Copyright 2023 &middot; Paul Chung
+                Source for this Website &middot; Built by Paul Chung
             </footer>
         </div>
     </div>
