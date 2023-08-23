@@ -128,3 +128,19 @@ html {
     padding-left: 10px;
     padding-right: 10px;
 }
+
+.logo {
+    width: 200px;
+    border-radius: 12px;
+}
+
+@media only screen and (max-width: 1000px) {
+    .logo {
+        width: 100px;
+    }
+
+}
+
+.navbar {
+    padding-bottom: 5px !important;
+}
