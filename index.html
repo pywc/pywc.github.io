@@ -105,6 +105,11 @@
                                             Present</span></li>
                                     <li>Carnegie Mellon CyLab &middot; <span class="subtext">Summer 2022</span></li>
                                 </ul>
+                                <span class="semibold" style="font-size: 18px">Content Developer</span>
+                                <ul>
+                                    <li class="pt-1 pb-1">MetaCTF &middot; <span class="subtext">Summer 2023
+                                            - Present</span></li>
+                                </ul>
                                 <span class="semibold" style="font-size: 18px">President &amp; CTF Team Lead</span>
                                 <ul>
                                     <li class="pt-1 pb-1">Cybersecurity UW Club &middot; <span class="subtext">Fall 2020
@@ -120,7 +125,9 @@
                                 <h2 class="extrabold">Recent Projects</h2>
                                 <p class="semibold" style="font-size: 20px">2023</p>
                                 <ul>
-                                    <li>Shawshank Intel: A Heuristic-based Analysis of Censorship Mechanisms</li>
+                                    <li>PriBOT: Automated Privacy-Practice-Answering Chatbot</li>
+                                    <span class="subtext">Trained a privacy-practices-answering Llama 2 chatbot.</span>
+                                    <li>Shawshank Breakout: Analysis of Worldwide Censorship Mechanisms</li>
                                     <span class="subtext">Formulated a pipeline to analyze censorship tactics
                                         worldwide.</span>
                                     <li class="pt-1">Automatic Selection and Analysis of Google Data Safety Cards</li>
@@ -160,14 +167,14 @@
                                     <!--Publications-->
                                     <div class="accordion card card-pub">
                                         <div class="accordion-pub-item">
-                                            <h2 class="accordion-header" id="heading0003">
-                                                <button aria-controls="collapse0003" aria-expanded="false"
-                                                    class="accordion-button collapsed" data-bs-target="#collapse0003"
+                                            <h2 class="accordion-header" id="heading0004">
+                                                <button aria-controls="collapse0004" aria-expanded="false"
+                                                    class="accordion-button collapsed" data-bs-target="#collapse0004"
                                                     data-bs-toggle="collapse" type="button">
                                                     <div class="accordion-pub-body">
                                                         <h4 class="card-title">
-                                                            The Overview of Privacy Labels and their Compatibility with
-                                                            Privacy Policies
+                                                            Unpacking Privacy Labels: A Measurement and Developer
+                                                            Perspective on Google’s Data Safety Section
                                                         </h4>
                                                         <div class="card-subtitle">
                                                             Rishabh Khandelwal*, Asmit Nayak*
@@ -180,13 +187,13 @@
                                                             <span class="badge bg-warning">
                                                                 Conference
                                                             </span>
-                                                            USENIX Security 2024, August 2024.
+                                                            33rd USENIX Security Symposium (USENIX Security 2024).
                                                         </div>
                                                     </div>
                                                 </button>
                                             </h2>
-                                            <div aria-labelledby="heading0003" class="accordion-collapse collapse"
-                                                id="collapse0003">
+                                            <div aria-labelledby="heading0004" class="accordion-collapse collapse"
+                                                id="collapse0004">
                                                 <div class="accordion-body">
                                                     <a class="btn btn-primary" href="papers/usenix24-dss.pdf"
                                                         target="_none" type="button">PDF</a><br><br>
@@ -221,6 +228,73 @@
                                     </div>
                                     <div class="accordion card card-pub">
                                         <div class="accordion-pub-item">
+                                            <h2 class="accordion-header" id="heading0003">
+                                                <button aria-controls="collapse0003" aria-expanded="false"
+                                                    class="accordion-button collapsed" data-bs-target="#collapse0003"
+                                                    data-bs-toggle="collapse" type="button">
+                                                    <div class="accordion-pub-body">
+                                                        <h4 class="card-title">
+                                                            Comparing Privacy Labels of Applications in Android and iOS
+                                                        </h4>
+                                                        <div class="card-subtitle">
+                                                            Rishabh Khandelwal, Asmit Nayak
+                                                            <strong>
+                                                                Paul Chung,
+                                                            </strong>
+                                                            Kassem Fawaz
+                                                        </div>
+                                                        <div class="card-text">
+                                                            <span class="badge bg-warning">
+                                                                Conference
+                                                            </span>
+                                                            Workshop on Privacy in the Electronic Society (WPES) 2023.
+                                                        </div>
+                                                    </div>
+                                                </button>
+                                            </h2>
+                                            <div aria-labelledby="heading0003" class="accordion-collapse collapse"
+                                                id="collapse0003">
+                                                <div class="accordion-body">
+                                                    <a class="btn btn-primary" href="papers/wpes23-dsc.pdf"
+                                                        target="_none" type="button">PDF</a><br><br>
+                                                    <h5>Abstract</h5>
+                                                    <p>
+                                                        The increasing concern for privacy protection in mobile apps has
+                                                        prompted the development of tools such as privacy labels to
+                                                        assist users in understanding the privacy practices of
+                                                        applications. Both Google and Apple have mandated developers to
+                                                        use privacy labels to increase transparency in data collection
+                                                        and sharing practices. These privacy labels provide detailed
+                                                        information about apps' data practices, including the types of
+                                                        data collected and the purposes associated with each data type.
+                                                        This offers a unique opportunity to understand apps' data
+                                                        practices at scale. In this study, we conduct a large-scale
+                                                        measurement study of privacy labels using apps from the Android
+                                                        Play Store (n=2.4M) and the Apple App Store (n=1.38M). We
+                                                        establish a common mapping between iOS and Android labels,
+                                                        enabling a direct comparison of disclosed practices and data
+                                                        types between the two platforms. By studying over 100K apps, we
+                                                        identify discrepancies and inconsistencies in self-reported
+                                                        privacy practices across platforms. Our findings reveal that at
+                                                        least 60% of all apps have different practices on the two
+                                                        platforms. Additionally, we explore factors contributing to
+                                                        these discrepancies and provide valuable insights for
+                                                        developers, users, and policymakers. Our analysis suggests that
+                                                        while privacy labels have the potential to provide useful
+                                                        information concisely, in their current state, it is not clear
+                                                        whether the information provided is accurate. Without robust
+                                                        consistency checks by the distribution platforms, privacy labels
+                                                        may not be as effective and can even create a false sense of
+                                                        security for users. Our study highlights the need for further
+                                                        research and improved mechanisms to ensure the accuracy and
+                                                        consistency of privacy labels.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion card card-pub">
+                                        <div class="accordion-pub-item">
                                             <h2 class="accordion-header" id="heading0002">
                                                 <button aria-controls="collapse0002" aria-expanded="false"
                                                     class="accordion-button collapsed" data-bs-target="#collapse0002"
@@ -241,7 +315,7 @@
                                                             <span class="badge bg-warning">
                                                                 Conference
                                                             </span>
-                                                            USENIX Security 2023, August 2023.
+                                                            32nd USENIX Security Symposium (USENIX Security 2023).
                                                         </div>
                                                     </div>
                                                 </button>
@@ -296,7 +370,7 @@
                                                             <span class="badge bg-warning">
                                                                 Conference
                                                             </span>
-                                                            CISC-W' 2019, December 2019.
+                                                            Conference on Information Security and Cryptography-Winter (CISC-W') 2019.
                                                         </div>
                                                     </div>
                                                 </button>
