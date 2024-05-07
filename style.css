@@ -80,6 +80,7 @@ a:hover {
     width: 0;
     height: 0;
     visibility: hidden;
+    overflow: hidden;
 }
 
 @media only screen and (max-width: 500px) {
@@ -87,6 +88,7 @@ a:hover {
         width: 0;
         height: 0;
         visibility: hidden;
+        overflow: hidden;
     }
 
     .only-mobile {
@@ -103,6 +105,10 @@ a:hover {
     }
 
     .card {
+        margin-bottom: 20px;
+    }
+
+    .footer {
         margin-bottom: 20px;
     }
 }
