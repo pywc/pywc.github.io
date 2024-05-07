@@ -94,6 +94,17 @@ a:hover {
         height: auto;
         visibility: visible;
     }
+
+    .main-container {
+        padding-top: 3rem !important;
+        padding-bottom: 3rem !important;
+        padding-left: 0 !important;
+        padding-right: 0 !important;        
+    }
+
+    .card {
+        margin-bottom: 20px;
+    }
 }
 
 .nav-link {
