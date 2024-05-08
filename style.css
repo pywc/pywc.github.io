@@ -1,31 +1,30 @@
 :root {
     --pywc-primary: #2e4057;
-    --pywc-secondary: #F2DDA4;
+    --pywc-secondary: #f2dda4;
     font-family: Inter, sans-serif;
-    font-feature-settings: 'liga' 1, 'calt' 1; /* fix for Chrome */
+    font-feature-settings: "liga" 1, "calt" 1;
 }
+
 @supports (font-variation-settings: normal) {
-    :root { font-family: InterVariable, sans-serif; }
+    :root {
+        font-family: InterVariable, sans-serif;
+    }
 }
 
-.btn-primary,
-.btn-primary:active,
-.btn-primary:visited {
-    background-color: var(--pywc-secondary) !important;
-    color: var(--pywc-primary) !important;
-    border: 0px !important;
-    outline: none;
+html {
+    margin-right: 0 !important;
+    padding-left: 10px;
+    padding-right: 10px;
 }
-
 
 body {
     background-color: var(--pywc-primary);
-    color: white;
+    color: #fff;
 }
 
-h1,
-a {
-    color: white;
+a,
+h1 {
+    color: #fff;
     text-decoration: none;
 }
 
@@ -33,8 +32,13 @@ a:hover {
     filter: brightness(85%);
 }
 
-.semibold {
-    font-weight: 600;
+.btn-primary,
+.btn-primary:active,
+.btn-primary:visited {
+    background-color: var(--pywc-secondary) !important;
+    color: var(--pywc-primary) !important;
+    border: 0 !important;
+    outline: 0;
 }
 
 .extrabold {
@@ -55,19 +59,9 @@ a:hover {
     font-size: 50px;
 }
 
-.intro2 {
-    font-size: 36px;
-}
-
-@media only screen and (max-width: 600px) {
-    .intro {
-        font-size: 40px;
-    }
-}
-
 .card {
-    color: white;
-    border-color: white;
+    color: #fff;
+    border-color: #fff;
     background-color: var(--pywc-primary);
 }
 
@@ -84,6 +78,10 @@ a:hover {
 }
 
 @media only screen and (max-width: 500px) {
+    .intro {
+        font-size: 40px;
+    }
+
     .only-desktop {
         width: 0;
         height: 0;
@@ -101,7 +99,7 @@ a:hover {
         padding-top: 3rem !important;
         padding-bottom: 3rem !important;
         padding-left: 0 !important;
-        padding-right: 0 !important;        
+        padding-right: 0 !important;
     }
 
     .card {
@@ -121,8 +119,7 @@ a:hover {
 
 .color-secondary,
 .nav-link:focus,
-.nav-link:hover,
-.active-btn:hover {
+.nav-link:hover {
     color: var(--pywc-secondary);
 }
 
@@ -130,52 +127,8 @@ a:hover {
     font-size: 28px;
 }
 
-.subtext {
-    color: #a6a6a6;
-}
-
 .fs-5 {
     font-size: 1.1rem !important;
-}
-
-.badge {
-    color: black !important;
-}
-
-.accordion {
-    margin-bottom: 40px;
-}
-
-.nav-tabs .nav-link {
-    border: none !important;
-}
-
-.accordion-button {
-    background-color: linen !important;
-    color: black !important;
-}
-
-
-.accordion-button:not(.collapsed) {
-    background: none;
-}
-
-html {
-    margin-right: 0 !important;
-    padding-left: 10px;
-    padding-right: 10px;
-}
-
-.logo {
-    width: 200px;
-    border-radius: 12px;
-}
-
-@media only screen and (max-width: 1000px) {
-    .logo {
-        width: 100px;
-    }
-
 }
 
 .navbar {
