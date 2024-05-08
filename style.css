@@ -109,6 +109,10 @@ a:hover {
     .footer {
         margin-bottom: 20px;
     }
+
+    .btn {
+        margin-bottom: 0.5rem;
+    }
 }
 
 .nav-link {
