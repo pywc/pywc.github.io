@@ -20,6 +20,7 @@ html {
 body {
     background-color: var(--pywc-primary);
     color: #fff;
+    overflow-x: hidden;
 }
 
 a,
@@ -39,6 +40,11 @@ a:hover {
     color: var(--pywc-primary) !important;
     border: 0 !important;
     outline: 0;
+}
+
+.row {
+    max-width: 100%;
+    margin-left: 0;
 }
 
 .extrabold {
@@ -112,6 +118,16 @@ a:hover {
 
     .btn {
         margin-bottom: 0.5rem;
+    }
+
+    .col-sm-3 {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+
+    .col-sm-9 {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
     }
 }
 
