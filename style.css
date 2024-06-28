@@ -17,7 +17,6 @@ body {
     overflow-x: hidden;
     min-height: 100%;
     font-family: Archivo, 'Helvetica Neue', sans-serif !important;
-    width: 99%;
 }
 
 a,
@@ -59,7 +58,7 @@ a:hover {
 
 .title {
     font-size: 24px;
-    font-weight: 600;
+    font-weight: 800;
     text-decoration: none;
 }
 
