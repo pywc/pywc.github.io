@@ -140,6 +140,10 @@ a:hover {
         padding-left: 0 !important;
         padding-right: 0 !important;
     }
+
+    .publications {
+        padding: 0 !important;     
+    }
 }
 
 .nav-link {
@@ -181,7 +185,7 @@ ol li {
     margin-bottom: 15px;
 }
 
-#publications {
+.pubfont {
     font-size: 1.3rem;
 }
 
@@ -192,4 +196,8 @@ ol li {
 
 .publink {
     color: white;
+}
+
+.publications {
+    padding: 0.8rem;     
 }
