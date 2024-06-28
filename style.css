@@ -34,7 +34,7 @@ a:hover {
 }
 
 .header-bar {
-	border-top: 2px solid;
+	border-top: 1px solid;
 	color: var(--pywc-secondary);
 }
 
