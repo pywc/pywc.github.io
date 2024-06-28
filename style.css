@@ -167,12 +167,12 @@ a:hover {
 }
 
 ol {
-    padding-left: 1.7rem;
+    padding-left: 2.0rem;
 }
 
 ol lh {
     list-style: none;
-    margin-left: -1.7rem;
+    margin-left: -1.9rem;
     font-weight: 500;
     font-size: 1.3rem;
 }
