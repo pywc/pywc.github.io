@@ -144,6 +144,10 @@ a:hover {
     .publications {
         padding: 0 !important;     
     }
+
+    .pic-email {
+        width: 100% !important;
+    }
 }
 
 .nav-link {
@@ -200,4 +204,8 @@ ol li {
 
 .publications {
     padding: 0.8rem;     
+}
+
+.pic-email {
+    width: 22%;
 }
