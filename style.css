@@ -85,7 +85,7 @@ a:hover {
     overflow: hidden;
 }
 
-@media only screen and (max-width: 574px) {
+@media only screen and (max-width: 600px) {
     .intro {
         font-size: 40px;
     }
@@ -145,7 +145,11 @@ a:hover {
         padding: 0 !important;     
     }
 
-    .pic-email {
+    .intro-pic-email {
+        width: 100% !important;
+    }
+
+    .intro-text {
         width: 100% !important;
     }
 }
@@ -206,6 +210,14 @@ ol li {
     padding: 0.8rem;     
 }
 
-.pic-email {
-    width: 22%;
+.intro-pic-email {
+    width: 20%;
+}
+
+.intro-text {
+    width: 80%;
+}
+
+.btn-lg {
+    --bs-btn-font-size: 1.2rem !important;
 }
