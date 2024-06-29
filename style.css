@@ -201,3 +201,8 @@ ol li {
 .publications {
     padding: 0.8rem;     
 }
+
+.btn-lg {
+    --bs-btn-font-size: 1.25rem !important;
+    --bs-btn-padding-y: 0.4rem !important;
+}
