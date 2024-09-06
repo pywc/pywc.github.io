@@ -1,7 +1,8 @@
 :root {
-    --pywc-primary: #2e4057;
-    --pywc-secondary: #f2dda4;
-    
+    --pywc-primary: #182B49;
+    --pywc-secondary: #FFCD00;
+    --font-primary: #ffffff;
+    --font-secondary: #b0b0b0;
 }
 
 
@@ -13,7 +14,7 @@ html {
 
 body {
     background-color: var(--pywc-primary);
-    color: #fff;
+    color: var(--font-primary);
     overflow-x: hidden;
     min-height: 100%;
     font-family: Archivo, 'Helvetica Neue', sans-serif !important;
@@ -21,7 +22,7 @@ body {
 
 a,
 h1 {
-    color: #fff;
+    color: var(--font-primary);
     text-decoration: none;
 }
 
@@ -68,8 +69,8 @@ a:hover {
 }
 
 .card {
-    color: #fff;
-    border-color: #fff;
+    color: var(--font-primary);
+    border-color: var(--font-primary);
     background-color: var(--pywc-primary);
 }
 
@@ -199,11 +200,11 @@ ol li {
 
 .pubdetails {
     font-size: 1rem;
-    color: #b0b0b0;
+    color: var(--font-secondary);
 }
 
 .publink {
-    color: white;
+    color: var(--font-primary);
 }
 
 .publications {
