@@ -1,7 +1,7 @@
 :root {
-    --pywc-primary: #182B49;
-    --pywc-secondary: #e0c16e;
-    --font-primary: #fff;
+    --pywc-primary: #002b36;
+    --pywc-secondary: #ffdf77;
+    --font-primary: #eef5f9;
     --font-secondary: #b0b0b0;
 }
 
@@ -171,7 +171,7 @@ a:hover {
     font-size: 24px;
 }
 
-.fs-5 {
+.fs-5, .fs-3 {
     font-size: 1.1rem !important;
 }
 
