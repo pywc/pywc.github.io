@@ -142,7 +142,7 @@ a:hover {
         padding-right: 0 !important;
     }
 
-    .publications {
+    .no-padding {
         padding: 0 !important;     
     }
 
@@ -194,6 +194,11 @@ ol li {
     margin-bottom: 15px;
 }
 
+.no-padding-lr {
+    padding-left: 0; 
+    padding-right: 0;
+}
+
 .pubfont {
     font-size: 1.3rem;
 }
@@ -207,7 +212,7 @@ ol li {
     color: var(--font-primary);
 }
 
-.publications {
+.padding08 {
     padding: 0.8rem;     
 }
 
