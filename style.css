@@ -194,6 +194,10 @@ ol li {
     margin-bottom: 15px;
 }
 
+ul li {
+    margin-bottom: 4px;
+}
+
 .no-padding-lr {
     padding-left: 0; 
     padding-right: 0;
@@ -206,6 +210,10 @@ ol li {
 .pubdetails {
     font-size: 1rem;
     color: var(--font-secondary);
+}
+
+.subtle-color {
+    color: var(--font-secondary)
 }
 
 .publink {
