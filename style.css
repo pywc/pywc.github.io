@@ -142,6 +142,10 @@ a:hover {
         padding-right: 0 !important;
     }
 
+    .mobile-pt-5 {
+        padding-top: 3rem !important;
+    }
+
     .no-padding {
         padding: 0 !important;     
     }
@@ -192,6 +196,10 @@ ol lh {
 
 ol li {
     margin-bottom: 15px;
+}
+
+ul {
+    margin-bottom: 0 !important;
 }
 
 ul li {
