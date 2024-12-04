@@ -142,10 +142,6 @@ a:hover {
         padding-right: 0 !important;
     }
 
-    .mobile-pt-5 {
-        padding-top: 3rem !important;
-    }
-
     .no-padding {
         padding: 0 !important;     
     }
@@ -156,6 +152,12 @@ a:hover {
 
     .intro-text {
         width: 100% !important;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .mobile-pt-5 {
+        padding-top: 3rem !important;
     }
 }
 
